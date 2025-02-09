@@ -1,0 +1,144 @@
+import React, { useState } from 'react';
+import { Menu, X, ChevronRight, Globe, Wallet, Bookmark, Car, Home, Briefcase, Book, LineChart, MessageSquare, TrendingUp, Exchange, Layers } from 'lucide-react';
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import { Button } from "@/components/ui/button";
+
+const ZtartLanding = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="fixed w-full bg-white border-b border-gray-200 z-50">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+          {/* Logo */}
+          <div className="flex lg:flex-1">
+            <a href="#" className="text-2xl font-bold text-blue-600">Ztart</a>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="flex lg:hidden">
+            <button
+              type="button"
+              className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
+
+          {/* Desktop navigation */}
+          <div className="hidden lg:flex lg:gap-x-12">
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Servicios Financieros</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="grid gap-3 p-6 w-[400px]">
+                      <div className="flex items-center gap-3">
+                        <Wallet className="h-6 w-6 text-blue-600" />
+                        <div>
+                          <h3 className="font-medium">Ztart Pay</h3>
+                          <p className="text-sm text-gray-500">Pagos digitales y billetera.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <LineChart className="h-6 w-6 text-blue-600" />
+                        <div>
+                          <h3 className="font-medium">Ztart Broker</h3>
+                          <p className="text-sm text-gray-500">Inversiones y trading.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Exchange className="h-6 w-6 text-blue-600" />
+                        <div>
+                          <h3 className="font-medium">Ztart Exchange</h3>
+                          <p className="text-sm text-gray-500">Intercambio de criptomonedas.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Servicios</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="grid gap-3 p-6 w-[400px]">
+                      <div className="flex items-center gap-3">
+                        <Car className="h-6 w-6 text-blue-600" />
+                        <div>
+                          <h3 className="font-medium">Ztart Ride</h3>
+                          <p className="text-sm text-gray-500">Servicios de transporte.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Home className="h-6 w-6 text-blue-600" />
+                        <div>
+                          <h3 className="font-medium">Ztart Home</h3>
+                          <p className="text-sm text-gray-500">Alquileres y hospedajes.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Briefcase className="h-6 w-6 text-blue-600" />
+                        <div>
+                          <h3 className="font-medium">Ztart Work</h3>
+                          <p className="text-sm text-gray-500">Servicios profesionales.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Book className="h-6 w-6 text-blue-600" />
+                        <div>
+                          <h3 className="font-medium">Ztart Academy</h3>
+                          <p className="text-sm text-gray-500">Cursos en línea y trading.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </div>
+
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-6">
+            <Button variant="ghost">
+              <Globe className="mr-2 h-4 w-4" />
+              ES
+            </Button>
+            <Button variant="ghost">Iniciar sesión</Button>
+            <Button className="bg-blue-600 hover:bg-blue-700">Comenzar</Button>
+          </div>
+        </nav>
+      </header>
+
+      {/* Hero section */}
+      <main className="pt-24">
+        <div className="relative isolate">
+          <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+            <div className="mx-auto max-w-2xl text-center">
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                Explora el Futuro con Ztart
+              </h1>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Pagos, educación, movilidad, inversiones y más en un solo ecosistema digital.
+              </p>
+              <div className="mt-10 flex items-center justify-center gap-x-6">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                  Comenzar ahora
+                  <ChevronRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default ZtartLanding;
