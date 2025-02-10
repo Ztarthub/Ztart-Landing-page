@@ -1,4 +1,13 @@
 {
+  "name": "ztart-landing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@react-three/fiber": "^8.17.14",
     "framer-motion": "^12.4.2",
@@ -7,5 +16,9 @@
     "react-dom": "^18.3.1",
     "react-responsive": "^10.0.0",
     "three": "^0.173.0"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.3.5"
   }
 }

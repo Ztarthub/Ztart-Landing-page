@@ -1,0 +1,12 @@
+import React from 'react';
+import ZtartLanding from '@/components/ui/ZtartLanding';
+
+const App = () => {
+  return (
+    <div>
+      <ZtartLanding />
+    </div>
+  );
+};
+
+export default App;
