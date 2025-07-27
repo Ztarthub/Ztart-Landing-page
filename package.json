@@ -9,13 +9,14 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@react-three/fiber": "^8.17.14",
+    "@react-three/drei": "^9.56.14",
+    "@react-three/fiber": "^8.13.7",
     "framer-motion": "^12.4.2",
     "lucide-react": "^0.475.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-responsive": "^10.0.0",
-    "three": "^0.173.0"
+    "three": "^0.139.2"
   },
   "devDependencies": {
     "react-scripts": "^5.0.1",
