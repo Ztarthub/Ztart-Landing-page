@@ -1,4 +1,9 @@
 nohup: ignoring input
+📧 Email service initialization:
+  EMAIL_USER: not configured
+  EMAIL_PASS: not configured
+  isDevelopment: true
+📧 Email service running in development mode - emails will be logged only
 Executing (default): SELECT 1+1 AS result
 ✅ Database connection established successfully.
 Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';
@@ -191,4 +196,20 @@ Executing (default): CREATE INDEX `contacts_status` ON `contacts` (`status`)
 📊 Health check: http://localhost:3001/api/health
 🔗 API Base URL: http://localhost:3001/api
 Executing (default): INSERT INTO `contacts` (`id`,`name`,`email`,`message`,`service`,`status`,`created_at`,`updated_at`) VALUES ($1,$2,$3,$4,$5,$6,$7,$8);
-Executing (default): INSERT INTO `contacts` (`id`,`name`,`email`,`message`,`service`,`status`,`created_at`,`updated_at`) VALUES ($1,$2,$3,$4,$5,$6,$7,$8);
+📧 EMAIL NOTIFICATION (Development Mode):
+From: "Ztart Landing" <noreply@ztart.com>
+To: admin@ztart.com
+Subject: Nuevo mensaje de contacto - ztart-pay
+Message: 
+          Nuevo Mensaje de Contacto
+          
+          Nombre: Test User
+          Email: test@example.com
+          Servicio: ztart-pay
+          Fecha: 2/8/2025, 13:21:46
+          
+          Mensaje:
+          Testing email notifications in development mode
+        
+---
+✅ Email service running in development mode

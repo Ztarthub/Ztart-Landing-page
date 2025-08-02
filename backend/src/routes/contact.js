@@ -28,8 +28,13 @@ router.post('/', contactValidation, async (req, res) => {
     const Contact = require('../models/Contact');
     const contact = await Contact.create({ name, email, message, service });
 
-    // TODO: Send email notification
-    // await sendContactEmail({ name, email, message, service });
+    // Send email notification
+    const emailService = require('../utils/emailService');
+    const emailResult = await emailService.sendContactNotification({ name, email, message, service });
+    
+    if (!emailResult.success) {
+      console.warn('⚠️ Email notification failed:', emailResult.error);
+    }
 
     // Simulate processing time
     await new Promise(resolve => setTimeout(resolve, 1000));
