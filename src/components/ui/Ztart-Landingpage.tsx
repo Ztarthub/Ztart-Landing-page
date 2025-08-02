@@ -138,7 +138,7 @@ const ZtartLanding = () => {
               <button
                 type="button"
                 className="rounded-md p-2.5 text-gray-700"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={() => dispatch({ type: 'SET_MOBILE_MENU_OPEN', payload: false })}
               >
                 <X className="h-6 w-6" />
               </button>
