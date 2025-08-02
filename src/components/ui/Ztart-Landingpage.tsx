@@ -4,17 +4,31 @@ import { motion } from 'framer-motion';
 import { Menu, X, ChevronRight, Globe, Wallet, Bookmark, Car, Home, Briefcase, Book, LineChart, MessageSquare } from 'lucide-react';
 import { useApp } from '../../contexts/AppContext';
 import { SERVICES, NAVIGATION_ITEMS, ANIMATION_VARIANTS } from '../../utils/constants';
+import ThemeToggle from './ThemeToggle';
+import Modal from './Modal';
+import ContactForm from './ContactForm';
+import { useModal } from '../../hooks/useModal';
+import { ContactForm as ContactFormType } from '../../types';
 
 const ZtartLanding = () => {
   const { state, dispatch } = useApp();
   const { mobileMenuOpen } = state.ui;
+  const contactModal = useModal();
 
   const toggleMobileMenu = () => {
     dispatch({ type: 'SET_MOBILE_MENU_OPEN', payload: !mobileMenuOpen });
   };
 
+  const handleContactSubmit = () => {
+    // The form now handles its own submission
+    // We just need to close the modal after a delay
+    setTimeout(() => {
+      contactModal.close();
+    }, 2000);
+  };
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-dark-900">
       {/* Header */}
       <header className="fixed w-full bg-white border-b border-gray-200 z-50">
         <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
@@ -99,12 +113,18 @@ const ZtartLanding = () => {
           </div>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-6">
-            <button className="flex items-center gap-2 text-gray-700 hover:text-purple-600">
+            <ThemeToggle />
+            <button className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
               <Globe className="h-4 w-4" />
               ES
             </button>
-            <button className="text-gray-700 hover:text-purple-600">Iniciar sesión</button>
-            <button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg">Comenzar</button>
+            <button className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">Iniciar sesión</button>
+            <button 
+              onClick={contactModal.open}
+              className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors"
+            >
+              Contactar
+            </button>
           </div>
         </nav>
       </header>
@@ -243,6 +263,16 @@ const ZtartLanding = () => {
           </div>
         </div>
       </footer>
+
+      {/* Contact Modal */}
+      <Modal
+        isOpen={contactModal.isOpen}
+        onClose={contactModal.close}
+        title="Contáctanos"
+        size="lg"
+      >
+        <ContactForm />
+      </Modal>
     </div>
   );
 };
