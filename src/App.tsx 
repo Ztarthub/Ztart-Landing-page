@@ -1,5 +1,5 @@
 import React from 'react';
-import ZtartLanding from '@/components/ui/ZtartLanding';
+import ZtartLanding from './components/ui/Ztart-Landingpage';
 
 const App = () => {
   return (
