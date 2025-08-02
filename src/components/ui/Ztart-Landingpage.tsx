@@ -7,6 +7,7 @@ import { SERVICES, NAVIGATION_ITEMS, ANIMATION_VARIANTS } from '../../utils/cons
 import ThemeToggle from './ThemeToggle';
 import Modal from './Modal';
 import ContactForm from './ContactForm';
+import ZtartLogo from './ZtartLogo';
 import { useModal } from '../../hooks/useModal';
 import { ContactForm as ContactFormType } from '../../types';
 
@@ -30,11 +31,13 @@ const ZtartLanding = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-dark-900">
       {/* Header */}
-      <header className="fixed w-full bg-white border-b border-gray-200 z-50">
+      <header className="fixed w-full bg-white dark:bg-dark-800 border-b border-gray-200 dark:border-gray-700 z-50">
         <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
           {/* Logo */}
           <div className="flex lg:flex-1">
-            <a href="#" className="text-2xl font-bold text-purple-600">Ztart</a>
+            <a href="#" className="flex items-center">
+              <ZtartLogo width={32} height={32} showText={true} />
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -132,9 +135,11 @@ const ZtartLanding = () => {
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden fixed inset-0 z-40 bg-black bg-opacity-50">
-          <div className="fixed inset-y-0 right-0 z-50 w-full bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="fixed inset-y-0 right-0 z-50 w-full bg-white dark:bg-dark-800 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="text-2xl font-bold text-purple-600">Ztart</a>
+              <a href="#" className="flex items-center">
+                <ZtartLogo width={28} height={28} showText={true} />
+              </a>
               <button
                 type="button"
                 className="rounded-md p-2.5 text-gray-700"

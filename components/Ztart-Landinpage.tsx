@@ -8,6 +8,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
+import ZtartLogo from "./ui/ZtartLogo";
 
 const ZtartLanding = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -19,7 +20,9 @@ const ZtartLanding = () => {
         <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
           {/* Logo */}
           <div className="flex lg:flex-1">
-            <a href="#" className="text-2xl font-bold text-purple-600">Ztart</a>
+            <a href="#" className="flex items-center">
+              <ZtartLogo width={32} height={32} showText={true} />
+            </a>
           </div>
 
           {/* Mobile menu button */}
