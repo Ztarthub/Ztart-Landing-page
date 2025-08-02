@@ -191,3 +191,4 @@ Executing (default): CREATE INDEX `contacts_status` ON `contacts` (`status`)
 📊 Health check: http://localhost:3001/api/health
 🔗 API Base URL: http://localhost:3001/api
 Executing (default): INSERT INTO `contacts` (`id`,`name`,`email`,`message`,`service`,`status`,`created_at`,`updated_at`) VALUES ($1,$2,$3,$4,$5,$6,$7,$8);
+Executing (default): INSERT INTO `contacts` (`id`,`name`,`email`,`message`,`service`,`status`,`created_at`,`updated_at`) VALUES ($1,$2,$3,$4,$5,$6,$7,$8);
