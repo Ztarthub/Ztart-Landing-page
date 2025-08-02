@@ -1,9 +1,17 @@
 
-import React, { useState } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { Menu, X, ChevronRight, Globe, Wallet, Bookmark, Car, Home, Briefcase, Book, LineChart, MessageSquare } from 'lucide-react';
+import { useApp } from '../../contexts/AppContext';
+import { SERVICES, NAVIGATION_ITEMS, ANIMATION_VARIANTS } from '../../utils/constants';
 
 const ZtartLanding = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { state, dispatch } = useApp();
+  const { mobileMenuOpen } = state.ui;
+
+  const toggleMobileMenu = () => {
+    dispatch({ type: 'SET_MOBILE_MENU_OPEN', payload: !mobileMenuOpen });
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -17,13 +25,15 @@ const ZtartLanding = () => {
 
           {/* Mobile menu button */}
           <div className="flex lg:hidden">
-            <button
+            <motion.button
               type="button"
               className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              onClick={toggleMobileMenu}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+            </motion.button>
           </div>
 
           {/* Desktop navigation */}
