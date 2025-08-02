@@ -24,8 +24,9 @@ router.post('/', contactValidation, async (req, res) => {
 
     const { name, email, message, service } = req.body;
 
-    // TODO: Save to database
-    // const contact = await Contact.create({ name, email, message, service });
+    // Save to database
+    const Contact = require('../models/Contact');
+    const contact = await Contact.create({ name, email, message, service });
 
     // TODO: Send email notification
     // await sendContactEmail({ name, email, message, service });

@@ -1,0 +1,193 @@
+nohup: ignoring input
+Executing (default): SELECT 1+1 AS result
+✅ Database connection established successfully.
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';
+Executing (default): PRAGMA TABLE_INFO(`users`);
+Executing (default): PRAGMA foreign_key_list(`users`)
+Executing (default): PRAGMA INDEX_LIST(`users`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_2`)
+Executing (default): PRAGMA foreign_key_list(`users`)
+Executing (default): PRAGMA TABLE_INFO(`users`);
+Executing (default): PRAGMA INDEX_LIST(`users`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_2`)
+Executing (default): PRAGMA foreign_key_list(`users`)
+Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users_backup` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users`;
+Executing (default): DROP TABLE `users`;
+Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users_backup`;
+Executing (default): DROP TABLE `users_backup`;
+Executing (default): PRAGMA TABLE_INFO(`users`);
+Executing (default): PRAGMA INDEX_LIST(`users`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_2`)
+Executing (default): PRAGMA foreign_key_list(`users`)
+Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users_backup` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users`;
+Executing (default): DROP TABLE `users`;
+Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users_backup`;
+Executing (default): DROP TABLE `users_backup`;
+Executing (default): PRAGMA TABLE_INFO(`users`);
+Executing (default): PRAGMA INDEX_LIST(`users`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_2`)
+Executing (default): PRAGMA foreign_key_list(`users`)
+Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users_backup` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users`;
+Executing (default): DROP TABLE `users`;
+Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users_backup`;
+Executing (default): DROP TABLE `users_backup`;
+Executing (default): PRAGMA TABLE_INFO(`users`);
+Executing (default): PRAGMA INDEX_LIST(`users`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_2`)
+Executing (default): PRAGMA foreign_key_list(`users`)
+Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users_backup` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users`;
+Executing (default): DROP TABLE `users`;
+Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users_backup`;
+Executing (default): DROP TABLE `users_backup`;
+Executing (default): PRAGMA TABLE_INFO(`users`);
+Executing (default): PRAGMA INDEX_LIST(`users`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_2`)
+Executing (default): PRAGMA foreign_key_list(`users`)
+Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users_backup` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users`;
+Executing (default): DROP TABLE `users`;
+Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users_backup`;
+Executing (default): DROP TABLE `users_backup`;
+Executing (default): PRAGMA TABLE_INFO(`users`);
+Executing (default): PRAGMA INDEX_LIST(`users`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_2`)
+Executing (default): PRAGMA foreign_key_list(`users`)
+Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users_backup` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users`;
+Executing (default): DROP TABLE `users`;
+Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users_backup`;
+Executing (default): DROP TABLE `users_backup`;
+Executing (default): PRAGMA TABLE_INFO(`users`);
+Executing (default): PRAGMA INDEX_LIST(`users`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_2`)
+Executing (default): PRAGMA foreign_key_list(`users`)
+Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users_backup` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users`;
+Executing (default): DROP TABLE `users`;
+Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users_backup`;
+Executing (default): DROP TABLE `users_backup`;
+Executing (default): PRAGMA TABLE_INFO(`users`);
+Executing (default): PRAGMA INDEX_LIST(`users`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_2`)
+Executing (default): PRAGMA foreign_key_list(`users`)
+Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users_backup` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users`;
+Executing (default): DROP TABLE `users`;
+Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL UNIQUE, `password_hash` VARCHAR(255) NOT NULL, `avatar_url` VARCHAR(500), `is_active` TINYINT(1) DEFAULT 1, `role` TEXT DEFAULT 'user', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `users` SELECT `id`, `name`, `email`, `password_hash`, `avatar_url`, `is_active`, `role`, `created_at`, `updated_at` FROM `users_backup`;
+Executing (default): DROP TABLE `users_backup`;
+Executing (default): PRAGMA INDEX_LIST(`users`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_1`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_users_2`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='contacts';
+Executing (default): PRAGMA TABLE_INFO(`contacts`);
+Executing (default): PRAGMA foreign_key_list(`contacts`)
+Executing (default): PRAGMA INDEX_LIST(`contacts`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_contacts_1`)
+Executing (default): PRAGMA INDEX_INFO(`contacts_email`)
+Executing (default): PRAGMA INDEX_INFO(`contacts_created_at`)
+Executing (default): PRAGMA INDEX_INFO(`contacts_status`)
+Executing (default): PRAGMA foreign_key_list(`contacts`)
+Executing (default): PRAGMA TABLE_INFO(`contacts`);
+Executing (default): PRAGMA INDEX_LIST(`contacts`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_contacts_1`)
+Executing (default): PRAGMA INDEX_INFO(`contacts_email`)
+Executing (default): PRAGMA INDEX_INFO(`contacts_created_at`)
+Executing (default): PRAGMA INDEX_INFO(`contacts_status`)
+Executing (default): PRAGMA foreign_key_list(`contacts`)
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts_backup` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts`;
+Executing (default): DROP TABLE `contacts`;
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts_backup`;
+Executing (default): DROP TABLE `contacts_backup`;
+Executing (default): PRAGMA TABLE_INFO(`contacts`);
+Executing (default): PRAGMA INDEX_LIST(`contacts`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_contacts_1`)
+Executing (default): PRAGMA foreign_key_list(`contacts`)
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts_backup` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts`;
+Executing (default): DROP TABLE `contacts`;
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts_backup`;
+Executing (default): DROP TABLE `contacts_backup`;
+Executing (default): PRAGMA TABLE_INFO(`contacts`);
+Executing (default): PRAGMA INDEX_LIST(`contacts`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_contacts_1`)
+Executing (default): PRAGMA foreign_key_list(`contacts`)
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts_backup` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts`;
+Executing (default): DROP TABLE `contacts`;
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts_backup`;
+Executing (default): DROP TABLE `contacts_backup`;
+Executing (default): PRAGMA TABLE_INFO(`contacts`);
+Executing (default): PRAGMA INDEX_LIST(`contacts`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_contacts_1`)
+Executing (default): PRAGMA foreign_key_list(`contacts`)
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts_backup` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts`;
+Executing (default): DROP TABLE `contacts`;
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts_backup`;
+Executing (default): DROP TABLE `contacts_backup`;
+Executing (default): PRAGMA TABLE_INFO(`contacts`);
+Executing (default): PRAGMA INDEX_LIST(`contacts`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_contacts_1`)
+Executing (default): PRAGMA foreign_key_list(`contacts`)
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts_backup` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts`;
+Executing (default): DROP TABLE `contacts`;
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts_backup`;
+Executing (default): DROP TABLE `contacts_backup`;
+Executing (default): PRAGMA TABLE_INFO(`contacts`);
+Executing (default): PRAGMA INDEX_LIST(`contacts`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_contacts_1`)
+Executing (default): PRAGMA foreign_key_list(`contacts`)
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts_backup` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts`;
+Executing (default): DROP TABLE `contacts`;
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts_backup`;
+Executing (default): DROP TABLE `contacts_backup`;
+Executing (default): PRAGMA TABLE_INFO(`contacts`);
+Executing (default): PRAGMA INDEX_LIST(`contacts`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_contacts_1`)
+Executing (default): PRAGMA foreign_key_list(`contacts`)
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts_backup` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts_backup` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts`;
+Executing (default): DROP TABLE `contacts`;
+Executing (default): CREATE TABLE IF NOT EXISTS `contacts` (`id` UUID UNIQUE PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `message` TEXT NOT NULL, `service` VARCHAR(100), `status` TEXT DEFAULT 'pending', `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL);
+Executing (default): INSERT INTO `contacts` SELECT `id`, `name`, `email`, `message`, `service`, `status`, `created_at`, `updated_at` FROM `contacts_backup`;
+Executing (default): DROP TABLE `contacts_backup`;
+Executing (default): PRAGMA INDEX_LIST(`contacts`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_contacts_1`)
+Executing (default): CREATE INDEX `contacts_email` ON `contacts` (`email`)
+Executing (default): CREATE INDEX `contacts_created_at` ON `contacts` (`created_at`)
+Executing (default): CREATE INDEX `contacts_status` ON `contacts` (`status`)
+✅ Database synced successfully
+🚀 Server running on port 3001
+📊 Health check: http://localhost:3001/api/health
+🔗 API Base URL: http://localhost:3001/api
+Executing (default): INSERT INTO `contacts` (`id`,`name`,`email`,`message`,`service`,`status`,`created_at`,`updated_at`) VALUES ($1,$2,$3,$4,$5,$6,$7,$8);

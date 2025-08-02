@@ -37,16 +37,16 @@ class ApiService {
   }
 
   async submitContactForm(formData: ContactForm): Promise<ApiResponse<{ id: string }>> {
-    // Simulate API call for now
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve({
-          data: { id: 'contact-' + Date.now() },
-          success: true,
-          message: 'Mensaje enviado exitosamente'
-        });
-      }, 1000);
-    });
+    try {
+      const response = await this.request('/contact', {
+        method: 'POST',
+        body: JSON.stringify(formData)
+      });
+      return response;
+    } catch (error) {
+      console.error('API Error:', error);
+      throw error;
+    }
   }
 
   async getServices(): Promise<ApiResponse<any[]>> {
