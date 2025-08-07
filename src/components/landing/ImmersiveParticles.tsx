@@ -27,6 +27,7 @@ const ImmersiveParticles = () => {
       });
     }
     function animate() {
+      if (!ctx) return;
       ctx.clearRect(0, 0, w, h);
       for (const p of particles) {
         ctx.beginPath();

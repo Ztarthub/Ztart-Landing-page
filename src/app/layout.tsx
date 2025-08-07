@@ -1,5 +1,6 @@
-import ZtartHead from '@/components/ZtartHead'
-import Navbar from '@/components/ui/Navbar'
+import '../assets/styles.css'
+import ZtartHead from '../components/ZtartHead'
+import Navbar from '../components/ui/Navbar'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

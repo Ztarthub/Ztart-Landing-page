@@ -1,13 +1,12 @@
 import React from 'react';
-import HeroSection from '../landing/HeroSection.tsx';
-import ModuleShowcase from '../landing/ModuleShowcase.tsx';
-import EcosystemVision from '../landing/EcosystemVision.tsx';
+import HeroSection from '../HeroSection';
+// import ModuleShowcase from '../landing/ModuleShowcase';
+// import EcosystemVision from '../landing/EcosystemVision';
 
 const ZtartLandingpage = () => (
   <main className="bg-black min-h-screen w-full">
     <HeroSection />
-    <ModuleShowcase />
-    <EcosystemVision />
+    {/* Aquí irán los siguientes módulos visuales */}
   </main>
 );
 

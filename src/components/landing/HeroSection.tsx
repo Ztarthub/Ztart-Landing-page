@@ -1,11 +1,11 @@
 
 import React, { useRef, useState } from 'react';
-import ThreeDComponent from '../ui/ThreeDComponent.tsx';
+import ThreeDComponent from '../ui/ThreeDComponent.js';
 
-import AnimatedComponent from '../ui/AnimatedComponent.tsx';
-import ImmersiveParticles from './ImmersiveParticles.tsx';
-import { useParallax } from './useParallax.ts';
-import MockupAnimated from './MockupAnimated.tsx';
+import AnimatedComponent from '../ui/AnimatedComponent.js';
+import ImmersiveParticles from './ImmersiveParticles.js';
+import { useParallax } from './useParallax.js';
+import MockupAnimated from './MockupAnimated.js';
 import { motion } from 'framer-motion';
 
 

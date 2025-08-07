@@ -74,15 +74,15 @@ Ztart Ecosystem es una plataforma digital modular, global y escalable que integr
 
 ## 7. Monetización Híbrida (Suscripción + Pago por Uso)
 
-| Módulo           | Incluido en Plan | Acceso Freemium                        | Con Plan (Standard+)                  | Sin Plan (Pago por uso)                |
-|------------------|------------------|----------------------------------------|---------------------------------------|----------------------------------------|
-| Tip'$ M€         | ✅ Core           | Enviar propinas, QR básico             | QR premium, reportes, recompensas     | $0.99 QR avanzado o $0.25 por uso      |
-| Ztart eSIM       | 🔸 Parcial        | Comprar eSIM (precio completo)         | Descuentos, gestión, múltiples eSIM   | Precio completo por paquete            |
-| Ztart Travel     | 🔸 Parcial        | Buscar hoteles/vuelos                  | Reservas sin fee, cashback            | Fee por reserva ($3–$10)               |
-| Ztart Ride       | 🔸 Parcial        | Pedir viaje básico                     | Tarifa preferencial, historial        | Fee dinámico por viaje (5–10%)         |
-| Ztart Home/Rent  | ❌ No             | —                                      | Publicar propiedades, gestión         | 20% por reserva administrada           |
-| Ztart Work       | 🔸 Parcial        | Buscar servicios                       | Publicar servicios, analíticas        | 10% fee sobre contrataciones           |
-| Ztart Academy    | 🔸 Parcial        | Cursos gratuitos                       | Certificados, cursos premium          | Pago por curso premium ($4.99–$49.99)  |
+| Módulo           | Incluido en Plan | Acceso Freemium                        | Con Plan (Standard+)                  | Sin Plan (Pago x uso) |
+|------------------|------------------|----------------------------------------|---------------------------------------|-----------------------|
+| Tip'$ M€         | ✅ Core           | Enviar propinas, QR básico            | QR premium, reportes, recompensas     | $0.99 QR avanzado o $0.25 por uso      |
+| Ztart eSIM       | 🔸 Parcial        | Comprar eSIM (precio completo)        | Descuentos, gestión, múltiples eSIM   | Precio completo por paquete            |
+| Ztart Travel     | 🔸 Parcial        | Buscar hoteles/vuelos                 | Reservas sin fee, cashback            | Fee por reserva ($3–$10)               |
+| Ztart Ride       | 🔸 Parcial        | Pedir viaje básico                    | Tarifa preferencial, historial        | Fee dinámico por viaje (5–10%)         |
+| Ztart Home/Rent  | ❌ No             | —                                     | Publicar propiedades, gestión         | 20% por reserva administrada           |
+| Ztart Work       | 🔸 Parcial        | Buscar servicios                      | Publicar servicios, analíticas        | 10% fee sobre contrataciones           |
+| Ztart Academy    | 🔸 Parcial        | Cursos gratuitos                      | Certificados, cursos premium          | Pago por curso premium ($4.99–$49.99)  |
 
 ---
 
