@@ -7,9 +7,7 @@ import React from 'react';
 // Puedes importar aquí los contextos globales o providers si los usas
 // import { UIProvider } from '@/contexts/ui.context';
 // import { ThemeProvider } from '@/contexts/theme.context';
-import Navbar from './components/ui/Navbar';
-import ZtartHead from './components/ZtartHead';
-import HeroSection from './components/HeroSection';
+// Legacy references removed in Next migration; kept for context
 
 import ModuleShowcase from './components/ModuleShowcase';
 
