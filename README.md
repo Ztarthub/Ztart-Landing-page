@@ -1,4 +1,25 @@
-# Ztart-Landing-page — Sistema de Ramas Óptimo-Híbrido
+# Ztart Landing — The Digital Revolution Hub for Finance & Lifestyle
+
+## Run / Build / Deploy
+
+- Dev: `npm run dev`
+- Build: `npm run build`
+- Start: `npm run start`
+
+Stack: Next.js (App Router) + TypeScript + Tailwind v4.
+
+## Quality Standards
+
+- Lint/Types: `npm run lint`, `npm run type-check`
+- No artifacts en git: `.next`, `dist`, `build` ignorados
+- Accesibilidad: semántica básica y contraste en CTAs
+
+## Project Structure
+
+- `app/` — `layout.tsx`, `page.tsx`, `globals.css`
+- `components/` — UI y secciones de landing
+
+## Branching
 
 Este proyecto implementa un sistema de ramas y documentación profesional:
 
