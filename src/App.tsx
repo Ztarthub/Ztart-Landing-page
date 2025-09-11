@@ -12,19 +12,7 @@ import React from 'react';
 import ModuleShowcase from './components/ModuleShowcase';
 
 const App = () => {
-  return (
-    <>
-      <ZtartHead />
-      <Navbar />
-      <HeroSection />
-      <ModuleShowcase />
-      <BenefitsSection />
-      <DemoSection />
-      <TestimonialsSection />
-      <CTASection />
-      <FooterSection />
-    </>
-  );
+  return null;
 };
 
 export default App;

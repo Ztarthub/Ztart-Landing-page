@@ -127,11 +127,11 @@ const ZtartLanding = () => {
                 Desde pagos hasta educación, movilidad y servicios financieros. Todo lo que necesitas en una única plataforma.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
+                <Button className="h-11 px-5 text-base bg-purple-600 hover:bg-purple-700">
                   Comenzar ahora
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button variant="outline" size="lg">
+                <Button variant="outline" className="h-11 px-5 text-base">
                   Explorar servicios
                 </Button>
               </div>
