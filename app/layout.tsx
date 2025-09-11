@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Ztart — Ecosistema Digital',
-  description: 'Landing oficial de Ztart Ecosystem',
+  title: 'Ztart — The Digital Revolution Hub for Finance & Lifestyle',
+  description: 'The future of finance & lifestyle — powered by AI & blockchain. Manage funds, rewards, and crypto in one place.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

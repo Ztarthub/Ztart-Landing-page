@@ -121,10 +121,10 @@ const ZtartLanding = () => {
           <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Tu ecosistema digital integral
+                The Future of Finance & Lifestyle — Powered by AI & Blockchain
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Desde pagos hasta educación, movilidad y servicios financieros. Todo lo que necesitas en una única plataforma.
+                Ztart is the next-generation digital ecosystem integrating AI, blockchain, and financial automation to redefine the way you transact, save, and earn.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <Button className="h-11 px-5 text-base bg-purple-600 hover:bg-purple-700">
@@ -150,51 +150,66 @@ const ZtartLanding = () => {
                 Descubre todas las posibilidades que Ztart tiene para ti. Pagos, educación, movilidad y más en una sola plataforma.
               </p>
             </div>
-            <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-              <div className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-                {/* Feature 1 */}
-                <div className="flex flex-col">
-                  <div className="mb-6">
-                    <div className="rounded-lg bg-purple-600 p-2 w-10 h-10 flex items-center justify-center">
-                      <Wallet className="h-6 w-6 text-white" />
-                    </div>
+            <div className="mx-auto mt-16 max-w-3xl sm:mt-20 lg:mt-24 lg:max-w-7xl">
+              {/* Module status badges */}
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="rounded-lg border p-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-semibold">Ztart Wallet</h3>
+                    <span className="text-xs rounded-full bg-green-100 text-green-700 px-2 py-1">✅ Live</span>
                   </div>
-                  <h3 className="text-lg font-semibold leading-8 text-gray-900">
-                    Ztart Pay & Wallet
-                  </h3>
-                  <p className="mt-4 text-base leading-7 text-gray-600">
-                    Procesa pagos de forma segura y gestiona tu dinero con nuestra billetera digital integrada.
-                  </p>
+                  <p className="mt-2 text-sm text-gray-600">Digital wallet with rewards and seamless payments.</p>
                 </div>
-
-                {/* Feature 2 */}
-                <div className="flex flex-col">
-                  <div className="mb-6">
-                    <div className="rounded-lg bg-purple-600 p-2 w-10 h-10 flex items-center justify-center">
-                      <Book className="h-6 w-6 text-white" />
-                    </div>
+                <div className="rounded-lg border p-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-semibold">Ztart Pay</h3>
+                    <span className="text-xs rounded-full bg-yellow-100 text-yellow-700 px-2 py-1">🚀 In Expansion</span>
                   </div>
-                  <h3 className="text-lg font-semibold leading-8 text-gray-900">
-                    Ztart Academy
-                  </h3>
-                  <p className="mt-4 text-base leading-7 text-gray-600">
-                    Aprende con nuestros cursos en línea sobre trading, negocios y tecnología.
-                  </p>
+                  <p className="mt-2 text-sm text-gray-600">Cross-border fiat-crypto payments.</p>
                 </div>
-
-                {/* Feature 3 */}
-                <div className="flex flex-col">
-                  <div className="mb-6">
-                    <div className="rounded-lg bg-purple-600 p-2 w-10 h-10 flex items-center justify-center">
-                      <MessageSquare className="h-6 w-6 text-white" />
-                    </div>
+                <div className="rounded-lg border p-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-semibold">ZtartCoin</h3>
+                    <span className="text-xs rounded-full bg-blue-100 text-blue-700 px-2 py-1">🏗️ In Development</span>
                   </div>
-                  <h3 className="text-lg font-semibold leading-8 text-gray-900">
-                    Ztart Voice Assistant
-                  </h3>
-                  <p className="mt-4 text-base leading-7 text-gray-600">
-                    Controla todas las funciones con comandos de voz inteligentes.
-                  </p>
+                  <p className="mt-2 text-sm text-gray-600">Utility token for fees and rewards.</p>
+                </div>
+                <div className="rounded-lg border p-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-semibold">Ztart Travel</h3>
+                    <span className="text-xs rounded-full bg-gray-100 text-gray-700 px-2 py-1">🌍 Planned</span>
+                  </div>
+                  <p className="mt-2 text-sm text-gray-600">Bookings with integrated wallet and rewards.</p>
+                </div>
+              </div>
+
+              {/* Why Choose Ztart */}
+              <div className="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-2">
+                <div className="rounded-xl bg-white p-8 ring-1 ring-gray-200">
+                  <h2 className="text-2xl font-bold tracking-tight text-gray-900">Why Choose Ztart?</h2>
+                  <ul className="mt-6 space-y-3 text-gray-700">
+                    <li>✅ All-in-One Financial Ecosystem — manage funds, rewards, and crypto in one place.</li>
+                    <li>✅ AI-Powered Automation — smart insights and automated transactions.</li>
+                    <li>✅ Cross-Border Solutions — seamless fiat-crypto payments worldwide.</li>
+                    <li>✅ Scalable & Modular — expand into travel, business, rentals, and more.</li>
+                  </ul>
+                  <div className="mt-8 flex items-center gap-4">
+                    <Button className="h-11 px-5 text-base bg-purple-600 hover:bg-purple-700">Join Now</Button>
+                    <Button variant="outline" className="h-11 px-5 text-base">Explore Ztart</Button>
+                  </div>
+                </div>
+                <div className="rounded-xl bg-gray-50 p-8 ring-1 ring-gray-200">
+                  <h3 className="text-lg font-semibold text-gray-900">Ecosystem Overview</h3>
+                  <p className="mt-2 text-sm text-gray-600">How modules connect inside the ecosystem:</p>
+                  <div className="mt-6 h-48 w-full rounded-md border border-dashed border-gray-300 flex items-center justify-center text-gray-500">
+                    Infographic placeholder
+                  </div>
+                  <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-gray-600">
+                    <span className="rounded-full bg-gray-100 px-3 py-1">AI</span>
+                    <span className="rounded-full bg-gray-100 px-3 py-1">Blockchain</span>
+                    <span className="rounded-full bg-gray-100 px-3 py-1">Next.js</span>
+                    <span className="rounded-full bg-gray-100 px-3 py-1">Tailwind</span>
+                  </div>
                 </div>
               </div>
             </div>
